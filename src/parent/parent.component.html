@@ -1,0 +1,16 @@
+<p>
+  Parent component is having both children
+</p>
+<hr/>
+
+
+<div>To explain about parent to child interaction</div>
+<app-input-child []></app-input-child>
+<hr/>
+
+
+<div>This one is for child to parent interaction</div>
+<app-output-child (countVal)= 'getCount($event)'></app-output-child>
+<br/><br/>
+<div>Value from output-child: - {{valueFromChild}} </div>
+<hr/>
